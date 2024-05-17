@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="layout" name="app_splash">@layout/app_splash</item>
+    <item type="mipmap" name="ic_launcher">@mipmap/ic_launcher</item>
+    <item type="id" name="_dialog_imageview">@id/_dialog_imageview</item>
+</resources>
