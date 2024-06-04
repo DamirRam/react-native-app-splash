@@ -107,7 +107,7 @@ Update `AppDelegate.m` with the following additions:
 {
     // ...other code
     [super application:application didFinishLaunchingWithOptions:launchOptions];
-    [AppSplash show];  // here
+    [AppSplash showSplash:launchScreenName inRootView:rootView];  // here
     return YES;
 }
 

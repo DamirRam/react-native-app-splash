@@ -42,24 +42,7 @@ object AppSplash {
         mSplashDialog!!.requestWindowFeature(Window.FEATURE_NO_TITLE)
         mSplashDialog!!.setContentView(R.layout.app_splash)
         mSplashDialog!!.window?.clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND)
-        val _imageView: ImageView = mSplashDialog!!.findViewById(R.id._dialog_imageview)
-        imageResource?.let {
-          _imageView.setImageResource(it)
-          val widthInPixels = TypedValue.applyDimension(
-            TypedValue.COMPLEX_UNIT_DIP,
-            160.toFloat(),
-            activity.resources.displayMetrics
-          ).toInt()
-          val heightInPixels = TypedValue.applyDimension(
-            TypedValue.COMPLEX_UNIT_DIP,
-            160.toFloat(),
-            activity.resources.displayMetrics
-          ).toInt()
-          val layoutParams = _imageView.layoutParams
-          layoutParams.width = widthInPixels
-          layoutParams.height = heightInPixels
-          _imageView.layoutParams = layoutParams
-        }
+
         mSplashDialog!!.getWindow()!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
         mSplashDialog!!.setCancelable(false)
         if (fullScreen) {
